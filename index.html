@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Como o futebol pode melhorar sua experiência para os torcedores?</h1>
+        <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar o futebol!</p>
+        <form id="survey-form">
+            <div class="input-element">
+                <label id="name-label" for="name">Nome</label>
+                <input placeholder="nome" id="name" type="text" required />
+            </div>
+            <div class="input-element">
+                <label id="email-label" for="email">E-mail</label>
+                <input placeholder="e-mail" id="email" type="email" required />
+            </div>
+            <div class="input-element">
+                <label id="number-label" for="age">Idade</label>
+                <input placeholder="idade" id="number" type="number" min="5" max="100" required />
+            </div>
+            <div class="input-element">
+                <label id="select-label" for="dropdown">Qual seu time favorito?</label>
+                <select id="dropdown">
+                    <option>Flamengo</option>
+                    <option>São Paulo</option>
+                    <option>Palmeiras</option>
+                    <option>Vasco</option>
+                    <option>Corinthians</option>
+                </select>
+            </div>
+            <div class="input-element">
+                <label>Você já assistiu a um jogo de futebol ao vivo?</label>
+                <div>
+                    <label><input type="radio" name="game" value="yes" />Sim</label>
+                </div>
+                <div>
+                    <label><input type="radio" name="game" value="no" />Não</label>
+                </div>
+            </div>
+            <div class="input-element">
+                <label>Quais sugestões você acha que poderiam melhorar a experiência dos torcedores nos estádios?</label>
+                <div>
+                    <label><input type="checkbox" name="ideas" value="ticket_price" />Preços mais acessíveis dos ingressos</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="ideas" value="food_price" />Preços mais baixos para alimentação</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="ideas" value="stadium_cleanliness" />Melhor limpeza e organização dos estádios</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="ideas" value="fan_engagement" />Maior interação com a torcida durante os jogos</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" name="ideas" value="improve_referees" />Melhoria na arbitragem</label>
+                </div>
+            </div>
+            <div class="input-element">
+                <label for="comments">Comentários adicionais</label>
+                <textarea id="comments" placeholder="Se tiver mais sugestões ou algo a dizer, deixe aqui."></textarea>
+            </div>
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
